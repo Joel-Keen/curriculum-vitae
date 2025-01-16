@@ -2,13 +2,18 @@
 \usepackage{graphicx}
 \usepackage{bibentry}
 
+\usepackage{datetime}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH] \THEYEAR}
+
 \renewcommand{\baselinestretch}{1.15}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.1em}
 
 \title{Curriculum Vitae}
 \author{Joel Keen}
-\date{September 2024}
+
 
 \begin{document}
 \nobibliography{ref}
@@ -46,9 +51,10 @@ Practical Apprentice: ShadowWorks
 \section{Publications}
 \begin{enumerate}
 
+\item\bibentry{Chahid2024}
+
 \item\bibentry{Keen2023}
 
-\item\bibentry{Chahid2024}
 
 \end{enumerate}
 
@@ -69,8 +75,10 @@ Annual contribution towards undergraduate studies
 
 \section{Professional Memberships}
 
-Engineering Technician Member Institution of Mechanical Engineers
+\datedsubsection{Institution of Mechanical Engineers}{2021-}
+Engineering Technician Member 
 
-Student Member European Society for Precision Engineering and Nanotechnology (eu\textbf{spen})
+\datedsubsection{European Society for Precision Engineering and Nanotechnology}{2023-}
+Student Member 
 
 \end{document}
